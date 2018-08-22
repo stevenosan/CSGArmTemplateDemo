@@ -29,6 +29,23 @@ A Demo on Setting Up ARM Templates
 17) Go look at your newly created resource.
 
 # CI/CD Instructions
-
+1) Open Visual Studio 2017
+2) Go to File > New > Project
+3) Select Installed > Visual C# > Cloud > Azure Resource Group
+4) Give it some name, some location (doesn't matter), select .NET Framework 4.7.1, and check Create New Git Repository
+5) Select the "Web app" from the Visual Studio templates
+6) Go ahead and save this and somehow import the solution directory into some Git client
+7) Navigate to your VSTS Project
+8) Create a new Build
+9) Select the source that contains your solution (I used github), the pertinent repo and branch
+10) Create an Empty Process
+11) Give it some name, select the Hosted VS2017 agent queue.
+12) Give the Phase 1 two steps. Build Solution and Publish Artifact
+13) While this is building, let's create a Release
+14) Select the "Azure App Service deployment" Template
+15) Add an artifact, using the output of the build we created
+16) For our first environment, let's call it Development, add an Azure Resource Group Deployment Task
+17) For this example, fill out the Azure Subscription, Resource Group (give it a unique name, this will also be the websites name), Location and Template.
+18) Go ahead and let this puppy run then go see your newly provisioned app service!
 
 https://resources.azure.com/
