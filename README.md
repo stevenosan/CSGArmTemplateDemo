@@ -20,7 +20,7 @@ A Demo on Setting Up ARM Templates
 8) Open powershell, navigate to the directory
 9) Execute the deploy.ps1 powershell script
 10) Retrieve your azure subscription from the subscription blade
-11) .\deploy.ps1 -subscriptionid <yourSubscriptionId> -resourcegroupname <aResourceGroup> -deploymentname <whatever> -templatefilepath template.json 
+11) .\deploy.ps1 -subscriptionid yourSubscriptionId -resourcegroupname aResourceGroup -deploymentname whatever-templatefilepath template.json 
 12) Enter the appropriate azure credentials
 13) watch some stuff spam across the screen
 14) resourceGroupLocation = east us
